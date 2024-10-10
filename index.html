@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>BPM 퀴즈</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>🎶 BPM 퀴즈에 도전해봐! 🎶</h1>
+        <div id="mode-selection">
+            <p>모드를 선택해줘!</p>
+            <button id="practice-mode" class="mode-button">연습 모드</button>
+            <button id="real-mode" class="mode-button">실전 모드</button>
+        </div>
+        <div id="quiz" style="display: none;">
+            <p id="info-label">🔥 도전: 0번째 문제</p>
+            <p id="timer-label">🕒 연습 중...</p>
+            <div id="timer-progress">
+                <div id="timer-bar"></div>
+            </div>
+            <button id="play-button" class="action-button">▶️ 메트로놈 재생</button>
+            <input type="number" id="bpm-input" placeholder="BPM 입력" disabled>
+            <button id="submit-button" class="action-button" disabled>제출</button>
+            <p id="feedback-label"></p>
+            <div id="score-frame" style="display: none;">
+                <p id="exact-label">🎯 퍼펙트 히트: 0번</p>
+                <p id="near-label">👍 나쁘지 않아: 0번</p>
+                <p id="incorrect-label">❌ 아쉬웠어: 0번</p>
+                <p id="pass-label">⏭️ 스킵: 0번</p>
+            </div>
+            <div id="action-buttons">
+                <button id="pause-button" class="action-button">일시정지</button>
+                <button id="retry-button" class="action-button">🔄 다시 하기</button>
+                <button id="pass-button" class="action-button">패스</button>
+            </div>
+            <button id="back-button" class="action-button">뒤로가기</button>
+        </div>
+    </div>
+    <audio id="metronome-sound" src="metronome.wav"></audio>
+    <script src="script.js"></script>
+</body>
+</html>

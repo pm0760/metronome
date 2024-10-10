@@ -1,0 +1,68 @@
+body {
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.mode-button, .action-button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.action-button {
+    background-color: #2196F3;
+}
+
+#timer-progress {
+    width: 100%;
+    background-color: #555;
+    height: 20px;
+    margin: 20px 0;
+}
+
+#timer-bar {
+    width: 0%;
+    height: 100%;
+    background-color: #4CAF50;
+}
+
+#bpm-input {
+    font-size: 24px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+#feedback-label {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+#score-frame p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+#action-buttons {
+    margin: 20px 0;
+}
+
+#back-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
