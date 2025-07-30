@@ -1,0 +1,18 @@
+body {
+  background:#222;
+  color:#fff;
+  font-family:Arial, sans-serif;
+  text-align:center;
+}
+#deal-list {
+  list-style:none;
+  padding:0;
+}
+.deal-item {
+  margin:10px;
+  padding:10px;
+  border:1px solid #555;
+}
+.deal-item a {
+  color:#4CAF50;
+}

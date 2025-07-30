@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>핫딜 트래커</title>
+  <link rel="stylesheet" href="deals.css">
+</head>
+<body>
+  <h1>🔥 실시간 핫딜 트래커 🔥</h1>
+  <input type="text" id="search" placeholder="상품 검색" />
+  <button id="refresh">새로고침</button>
+  <ul id="deal-list"></ul>
+  <div id="history" style="display:none;">
+    <h2 id="hist-title"></h2>
+    <canvas id="history-chart" width="400" height="200"></canvas>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="deals.js"></script>
+</body>
+</html>
